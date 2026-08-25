@@ -28,10 +28,13 @@ html {
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 body {
     overflow-x: hidden;
+    max-width: 100%;
     background-color: var(--bg-color);
 }
 
@@ -1439,8 +1442,8 @@ body.menu-open {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        width: 100vw;
-        margin-left: -24px;
+        width: calc(100% + 48px) !important;
+        margin-left: -24px !important;
         overflow: hidden;
         position: relative;
         -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #000000 15%, #000000 85%, rgba(0, 0, 0, 0) 100%);
