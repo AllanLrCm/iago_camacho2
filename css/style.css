@@ -601,6 +601,7 @@ body.menu-open {
         opacity: 1 !important;
         z-index: 1001 !important;
         flex-shrink: 0 !important;
+        margin-right: calc(10px + env(safe-area-inset-right)) !important;
     }
 
     .menu-toggle .bar {
