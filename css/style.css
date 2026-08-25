@@ -148,11 +148,17 @@ body.menu-open {
     display: none;
     align-items: center;
     gap: 10px;
-    background: none;
+    background: transparent;
     border: none;
     cursor: pointer;
     padding: 8px;
     z-index: 1001;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
 }
 
 .menu-toggle-text {
@@ -594,6 +600,7 @@ body.menu-open {
         visibility: visible !important;
         opacity: 1 !important;
         z-index: 1001 !important;
+        flex-shrink: 0 !important;
     }
 
     .menu-toggle .bar {

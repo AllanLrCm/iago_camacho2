@@ -5,8 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (menuToggle && navMenu) {
         menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('active');
+            const isActive = menuToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
+            
+            // Toggle aria-expanded
+            menuToggle.setAttribute('aria-expanded', isActive ? 'true' : 'false');
             
             if (navMenu.classList.contains('active')) {
                 document.body.classList.add('menu-open');
@@ -29,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => {
                 menuToggle.classList.remove('active');
                 navMenu.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
                 document.body.classList.remove('menu-open');
             });
         });
