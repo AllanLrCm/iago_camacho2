@@ -590,8 +590,18 @@ body.menu-open {
     }
     
     .menu-toggle {
-        display: flex;
-        z-index: 1001;
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        z-index: 1001 !important;
+    }
+
+    .menu-toggle .bar {
+        background-color: #ffffff !important;
+    }
+
+    .menu-toggle-text {
+        color: #ffffff !important;
     }
     
     .menu-toggle.active .menu-toggle-text {
