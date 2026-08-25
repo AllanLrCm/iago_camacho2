@@ -29,7 +29,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- CSS Link -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=1.0.1">
 </head>
 <body>
 
@@ -43,9 +43,12 @@
             
             <!-- Mobile Menu Toggle -->
             <button class="menu-toggle" aria-label="Abrir Menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="menu-toggle-text">MENU</span>
+                <div class="hamburger-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </button>
 
             <!-- Navigation Links -->
@@ -56,6 +59,7 @@
                 <a href="#parcerias" class="nav-link">PARCERIAS</a>
                 <a href="#audiencia" class="nav-link">AUDIÊNCIA</a>
                 <a href="#contato" class="nav-link">CONTATO</a>
+                <a href="#contato" class="nav-link nav-link-cta-mobile">TRABALHE COMIGO <span class="arrow">→</span></a>
             </nav>
 
             <!-- CTA Header -->
@@ -100,10 +104,10 @@
 
             <!-- Top Right / Coordinates -->
             <div class="hero-coordinates-pane">
-                <svg class="icon-location" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <!--<svg class="icon-location" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path>
                     <circle cx="12" cy="9" r="2"></circle>
-                </svg>
+                </svg>-->
                 <span class="coords-value">23°35'02.7"S 46°39'50.9"W</span>
             </div>
 
@@ -281,7 +285,7 @@
             <div class="movement-grid">
                 <!-- Card 1 / Corrida -->
                 <div class="movement-card">
-                    <img src="assets/foto/IMG_3115 (1).jpeg" alt="Corrida" class="movement-card-img">
+                    <img src="assets/foto/IMG_3115 (1).jpeg" alt="Corrida" class="movement-card-img img-corrida">
                     <div class="movement-card-overlay"></div>
                     <div class="movement-card-content">
                         <span class="movement-card-title">CORRIDA</span>
@@ -291,7 +295,7 @@
 
                 <!-- Card 2 / Hyrox -->
                 <div class="movement-card">
-                    <img src="assets/foto/IMG_3996.JPG.jpeg" alt="Hyrox" class="movement-card-img">
+                    <img src="assets/foto/IMG_3996.JPG.jpeg" alt="Hyrox" class="movement-card-img img-hyrox">
                     <div class="movement-card-overlay"></div>
                     <div class="movement-card-content">
                         <span class="movement-card-title">HYROX</span>
@@ -301,7 +305,7 @@
 
                 <!-- Card 3 / Treino -->
                 <div class="movement-card">
-                    <img src="assets/foto/IMG_6156.JPG.jpeg" alt="Treino" class="movement-card-img">
+                    <img src="assets/foto/IMG_6156.JPG.jpeg" alt="Treino" class="movement-card-img img-treino">
                     <div class="movement-card-overlay"></div>
                     <div class="movement-card-content">
                         <span class="movement-card-title">TREINO</span>
@@ -311,7 +315,7 @@
 
                 <!-- Card 4 / Natação -->
                 <div class="movement-card">
-                    <img src="assets/foto/IMG_1180.JPG.jpeg" alt="Natação" class="movement-card-img">
+                    <img src="assets/foto/IMG_1180.JPG.jpeg" alt="Natação" class="movement-card-img img-natacao">
                     <div class="movement-card-overlay"></div>
                     <div class="movement-card-content">
                         <span class="movement-card-title">NATAÇÃO</span>
@@ -321,7 +325,7 @@
 
                 <!-- Card 5 / Lifestyle -->
                 <div class="movement-card">
-                    <img src="assets/foto/IMG_5976.JPG.jpeg" alt="Lifestyle" class="movement-card-img">
+                    <img src="assets/foto/IMG_5976.JPG.jpeg" alt="Lifestyle" class="movement-card-img img-lifestyle">
                     <div class="movement-card-overlay"></div>
                     <div class="movement-card-content">
                         <span class="movement-card-title">LIFESTYLE</span>
@@ -345,8 +349,8 @@
                     </h2>
                 </div>
 
-                <!-- Center / Logos -->
-                <div class="partners-center">
+                <!-- Center / Logos (Desktop) -->
+                <div class="partners-center partners-desktop-only">
                     <div class="partners-marquee">
                         <div class="partners-track">
                             <img src="assets/parceiro/dux.png" alt="Dux Nutrition" class="partner-logo logo-invert">
@@ -363,6 +367,41 @@
                             <img src="assets/parceiro/oficialfarma.png" alt="Oficialfarma" class="partner-logo logo-invert">
                             <img src="assets/parceiro/bruk.png" alt="Bruk" class="partner-logo">
                             <img src="assets/parceiro/bio.png" alt="Bio" class="partner-logo logo-invert">
+                            <img src="assets/parceiro/logo_dimonstro.jpeg" alt="Dimonstro" class="partner-logo">
+                            <img src="assets/parceiro/logo_dragon.jpg" alt="Dragon" class="partner-logo">
+                            <img src="assets/parceiro/o2 corre.png" alt="O2 Corre" class="partner-logo logo-invert">
+                            <img src="assets/parceiro/vital.png" alt="Vital" class="partner-logo">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center / Logos (Mobile) -->
+                <div class="partners-mobile-only">
+                    <!-- Linha 1: Move para a esquerda (DUX, OFICIALFARMA, BRUK, BIO) -->
+                    <div class="partners-marquee-row">
+                        <div class="partners-track-mobile track-left">
+                            <img src="assets/parceiro/dux.png" alt="Dux Nutrition" class="partner-logo logo-invert">
+                            <img src="assets/parceiro/oficialfarma.png" alt="Oficialfarma" class="partner-logo logo-invert">
+                            <img src="assets/parceiro/bruk.png" alt="Bruk" class="partner-logo">
+                            <img src="assets/parceiro/bio.png" alt="Bio" class="partner-logo logo-invert">
+                            
+                            <!-- Duplicados para loop sem emendas -->
+                            <img src="assets/parceiro/dux.png" alt="Dux Nutrition" class="partner-logo logo-invert">
+                            <img src="assets/parceiro/oficialfarma.png" alt="Oficialfarma" class="partner-logo logo-invert">
+                            <img src="assets/parceiro/bruk.png" alt="Bruk" class="partner-logo">
+                            <img src="assets/parceiro/bio.png" alt="Bio" class="partner-logo logo-invert">
+                        </div>
+                    </div>
+
+                    <!-- Linha 2: Move para a direita (DIMONSTRO, DRAGON, O2, VITAL) -->
+                    <div class="partners-marquee-row">
+                        <div class="partners-track-mobile track-right">
+                            <img src="assets/parceiro/logo_dimonstro.jpeg" alt="Dimonstro" class="partner-logo">
+                            <img src="assets/parceiro/logo_dragon.jpg" alt="Dragon" class="partner-logo">
+                            <img src="assets/parceiro/o2 corre.png" alt="O2 Corre" class="partner-logo logo-invert">
+                            <img src="assets/parceiro/vital.png" alt="Vital" class="partner-logo">
+                            
+                            <!-- Duplicados para loop sem emendas -->
                             <img src="assets/parceiro/logo_dimonstro.jpeg" alt="Dimonstro" class="partner-logo">
                             <img src="assets/parceiro/logo_dragon.jpg" alt="Dragon" class="partner-logo">
                             <img src="assets/parceiro/o2 corre.png" alt="O2 Corre" class="partner-logo logo-invert">
