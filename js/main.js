@@ -15,6 +15,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        // Keyboard accessibility
+        menuToggle.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                menuToggle.click();
+            }
+        });
+
         // Close menu when clicking a link
         const navLinks = navMenu.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
