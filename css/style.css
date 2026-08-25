@@ -248,6 +248,7 @@ body.menu-open {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    margin-top: -40px;
     padding-top: 15px;
 }
 
@@ -668,6 +669,7 @@ body.menu-open {
     .hero-info-pane {
         padding-top: 0;
         max-width: 100%;
+        margin-top: 0;
     }
     
     .hero-coordinates-pane {
